@@ -1,0 +1,1120 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: inversion
+meta:
+  id: wrk_5ad6740f5eca414abe5db13c0c0ab03a
+  created: 1773334025481
+  modified: 1773334025481
+  description: ""
+collection:
+  - name: cliente
+    meta:
+      id: fld_8ceb3ce78ed44ea4b3ffb1a3b01361f5
+      created: 1773330329998
+      modified: 1773337835518
+      sortKey: -1773330358114
+      description: ""
+    children:
+      - url: http://localhost:8080/api/clientes
+        name: Obtener todos
+        meta:
+          id: req_a1d33d4cae3a46179b4a969922941843
+          created: 1773330541950
+          modified: 1773343357951
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551588
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/clientes/1
+        name: "Obtener por ID "
+        meta:
+          id: req_097a4d2a268d428cb499838869b9c096
+          created: 1773330569878
+          modified: 1773338062931
+          isPrivate: false
+          description: ""
+          sortKey: -1773330569878
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/clientes
+        name: "Crear "
+        meta:
+          id: req_0ea51292c62d4b369c7605ea5aca99d3
+          created: 1773330582774
+          modified: 1773344328988
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582774
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nombre": "marco",
+              "apellidos": "Pérez García",
+              "ciudad": "Bogotá"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/clientes/1
+        name: "Actualizar "
+        meta:
+          id: req_6b88c3d989334e328b973f624454d8f4
+          created: 1773330607839
+          modified: 1773344324792
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607839
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nombre": "Juan test",
+              "apellidos": "Pérez García",
+              "ciudad": "Bogotá"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/clientes/{id}
+        name: "Eliminar "
+        meta:
+          id: req_31313a76a98a4d93a9f9408cf513a9f4
+          created: 1773330631594
+          modified: 1773330638388
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631594
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: disponibilidad
+    meta:
+      id: fld_980636c99b5147b2941633ab441ac678
+      created: 1773330336620
+      modified: 1773330958248
+      sortKey: -1773330336620
+      description: ""
+    children:
+      - url: http://localhost:8080/api/disponibilidades
+        name: Obtener todos
+        meta:
+          id: req_77524c67888d411890ccafe109d327d1
+          created: 1773330541951
+          modified: 1773343344709
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551589
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/disponibilidades
+        name: Crear
+        meta:
+          id: req_0f6ed5779d6249ddafa8028cb74d99ff
+          created: 1773330582775
+          modified: 1773344413702
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582775
+        method: POST
+        body:
+          mimeType: application/json
+          text: '{ "idSucursal": 1, "idProducto": 1 }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/disponibilidades/{id}
+        name: Actualizar
+        meta:
+          id: req_e15f86f155494e59bcd4c221e5ebff3f
+          created: 1773330607840
+          modified: 1773330626800
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607840
+        method: PUT
+        body:
+          mimeType: application/json
+          text: '{ "idSucursal": 1, "idProducto": 1 }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/disponibilidades/{id}
+        name: Eliminar
+        meta:
+          id: req_5b981eabc3e74f42866782b6ffd2ae29
+          created: 1773330631595
+          modified: 1773330638389
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631595
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: inscripcion
+    meta:
+      id: fld_469552c759df451e97d7b287dc3f499b
+      created: 1773330343155
+      modified: 1773344367673
+      sortKey: -1773330343155
+      description: ""
+    children:
+      - url: http://localhost:8080/api/inscripciones
+        name: Obtener todos
+        meta:
+          id: req_f42a60aeae594474ae1edaeb7428a423
+          created: 1773330541952
+          modified: 1773343331644
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551590
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/inscripciones
+        name: Crear
+        meta:
+          id: req_4326d656830943dbb93d3da69e29787e
+          created: 1773330582776
+          modified: 1773344371360
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582776
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "idProducto": 1,
+              "idCliente": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/inscripciones/{id}
+        name: Actualizar
+        meta:
+          id: req_34187a2cc4814460957ffd384f902dc2
+          created: 1773330607841
+          modified: 1773330626801
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607841
+        method: PUT
+        body:
+          mimeType: application/json
+          text: '{ "idProducto": 1, "idCliente": 1 }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/inscripciones/{id}
+        name: Eliminar
+        meta:
+          id: req_329ee69a1ca44f1faf7ab812f9ebde20
+          created: 1773330631596
+          modified: 1773330638390
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631596
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: producto
+    meta:
+      id: fld_11d73fb7e79d4112941de800aa0f082a
+      created: 1773330348290
+      modified: 1773344355031
+      sortKey: -1773330348290
+      description: ""
+    children:
+      - url: http://localhost:8080/api/productos
+        name: Obtener todos
+        meta:
+          id: req_61104d9a568947ffbaa1b81a933e9b0c
+          created: 1773330541953
+          modified: 1773343348294
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551591
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/productos/1
+        name: Obtener por ID
+        meta:
+          id: req_b0851509efe046ba802b29b82e84b56a
+          created: 1773330569881
+          modified: 1773344359150
+          isPrivate: false
+          description: ""
+          sortKey: -1773330569881
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/productos
+        name: Crear
+        meta:
+          id: req_c8ec754dd3534cbd81a069845eb37708
+          created: 1773330582777
+          modified: 1773344363940
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582777
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nombre": "Fondo de alto riesgo",
+              "tipoProducto": "Fondo de Inversión"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/productos/{id}
+        name: Actualizar
+        meta:
+          id: req_78aa2d77b2354e9095fc732d6c756077
+          created: 1773330607842
+          modified: 1773330626802
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607842
+        method: PUT
+        body:
+          mimeType: application/json
+          text: '{ "nombre": "string", "tipoProducto": "string" }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/productos/{id}
+        name: Eliminar
+        meta:
+          id: req_f36c19e6e1ea423f904a3ee28849d633
+          created: 1773330631597
+          modified: 1773330638391
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631597
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: sucursal
+    meta:
+      id: fld_8205a184f0b64649acadda1a946d9628
+      created: 1773330355567
+      modified: 1773330961965
+      sortKey: -1773330355567
+      description: ""
+    children:
+      - url: http://localhost:8080/api/sucursales
+        name: Obtener todos
+        meta:
+          id: req_7fd1c56f0fb54810b9d6fab5953b0753
+          created: 1773330541954
+          modified: 1773344350434
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551592
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sucursales/1
+        name: Obtener por ID
+        meta:
+          id: req_38bbeb65be864befae4202e04512b4b9
+          created: 1773330569882
+          modified: 1773344347770
+          isPrivate: false
+          description: ""
+          sortKey: -1773330569882
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sucursales
+        name: Crear
+        meta:
+          id: req_ff114fe99bb842b4ad711086b452e46e
+          created: 1773330582778
+          modified: 1773344341093
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582778
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nombre": "Sucursal Centro",
+              "ciudad": "Cali"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sucursales/1
+        name: Actualizar
+        meta:
+          id: req_57416d78c147464bafde53ac6b64f636
+          created: 1773330607843
+          modified: 1773344337859
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607843
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nombre": "Sucursal Centro",
+              "ciudad": "CALI"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/sucursales/{id}
+        name: Eliminar
+        meta:
+          id: req_9fb539cbe4e74c3f8a2967f1b1b4232c
+          created: 1773330631598
+          modified: 1773330638392
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631598
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: usuarios
+    meta:
+      id: fld_17de93c8763d4577ac8433ccdab58a8b
+      created: 1773330360661
+      modified: 1773330962973
+      sortKey: -1773330360661
+      description: ""
+    children:
+      - url: http://localhost:8080/api/usuarios/
+        name: Obtener todos
+        meta:
+          id: req_5e480e1252bd4f858cba69e88db65900
+          created: 1773330541955
+          modified: 1773333390063
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551593
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/usuarios/admin@test.com
+        name: Obtener por correo
+        meta:
+          id: req_f08d650ff1dc49c3b6bc84fee9f3fc47
+          created: 1773330569883
+          modified: 1773337854037
+          isPrivate: false
+          description: ""
+          sortKey: -1773330569883
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/usuarios/registro
+        name: Crear
+        meta:
+          id: req_66648162fca841a296a51fbdb2808236
+          created: 1773330582779
+          modified: 1773338388986
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582779
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "correo": "admin@test.com",
+              "nombre": "Admin Usuario",
+              "contrasena": "123456",
+              "role": "ADMIN",
+              "activo": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/usuarios/admin@test.com
+        name: Actualizar
+        meta:
+          id: req_5b212cfbc4ec456abe0481fafc513794
+          created: 1773330607844
+          modified: 1773337913989
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607844
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "nombre": "Admin test Usuario",
+              "contrasena": "123456",
+              "role": "ADMIN",
+              "activo": true
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/usuarios/{correo}
+        name: Eliminar
+        meta:
+          id: req_bf0bb5d11e5b4082b815d05255a82f98
+          created: 1773330631599
+          modified: 1773344317328
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631599
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: visitan
+    meta:
+      id: fld_b94c3dd9dd9842e7a65954c262f2e0bb
+      created: 1773330367293
+      modified: 1773337816773
+      sortKey: -1773330339887.5
+      description: ""
+    children:
+      - url: http://localhost:8080/api/visitas
+        name: Obtener todos
+        meta:
+          id: req_04b84233aa154df792b792df21224e3d
+          created: 1773330541956
+          modified: 1773343340763
+          isPrivate: false
+          description: ""
+          sortKey: -1773330551594
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/visitas/
+        name: Crear
+        meta:
+          id: req_9c7fae90f9c14f37b740ab73fb24b256
+          created: 1773330582780
+          modified: 1773330601838
+          isPrivate: false
+          description: ""
+          sortKey: -1773330582780
+        method: POST
+        body:
+          mimeType: application/json
+          text: '{ "idSucursal": 1, "idCliente": 1, "fechaVisita": "2026-03-12T10:44:12"
+            }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/visitas/{id}
+        name: Actualizar
+        meta:
+          id: req_169318adec98430282c88726288a8bf0
+          created: 1773330607845
+          modified: 1773330626805
+          isPrivate: false
+          description: ""
+          sortKey: -1773330607845
+        method: PUT
+        body:
+          mimeType: application/json
+          text: '{ "idSucursal": 1, "idCliente": 1, "fechaVisita": "2026-03-12T10:44:12"
+            }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/api/visitas/{id}
+        name: Eliminar
+        meta:
+          id: req_2838f28073b14fc7976272c7a634ed29
+          created: 1773330631600
+          modified: 1773330638394
+          isPrivate: false
+          description: ""
+          sortKey: -1773330631600
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.4.0
+            description: ""
+            disabled: false
+        authentication:
+          type: basic
+          useISO88591: false
+          username: admin@test.com
+          password: "123456"
+          disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c5d66cd942b149e8b152e2b1e64095ce
+    created: 1773330288532
+    modified: 1773330559220
+  cookies:
+    - id: f9e8b44e-af27-4848-9f64-55d932a26504
+      key: JSESSIONID
+      value: 889B08D4D7916D59445E706FFC54308D
+      domain: localhost
+      path: /
+      secure: false
+      httpOnly: true
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_53027e3eb3574f7291762d6e79360d89
+    created: 1773330288528
+    modified: 1773330288528
+    isPrivate: false

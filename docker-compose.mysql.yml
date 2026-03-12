@@ -1,0 +1,13 @@
+services:
+  mysql-db:
+    image: mysql:8.0
+    container_name: mysql_fondos_inversion
+    restart: always
+    environment:
+        MYSQL_DATABASE: fondos_inversion_db
+        MYSQL_ROOT_PASSWORD: root_password_segura
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
